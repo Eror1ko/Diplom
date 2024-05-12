@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".authorization"
     android:orientation="vertical"
-    android:background="@drawable/fon">
+
+    >
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textStyle="italic"
-        android:text="Для продолжения нужно авторизоваться!"
-        android:textColor="@color/orange"
-        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rectanglecircle"
+        android:backgroundTint="@color/backgroudcolor"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Для продолжения нужно авторизоваться!"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,7 +117,7 @@
         android:layout_height="70dp"
         android:text="Войти!"
         android:textSize="18dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/backgroudcolor"
         android:padding="13dp" />
 
 </LinearLayout>

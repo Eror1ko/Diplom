@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,9 +18,9 @@
         <activity
             android:name=".MainOneIsMain"
             android:exported="false" />
-        <activity
-            android:name=".NavigationBottom"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".a"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".authorization"
             android:exported="false" />

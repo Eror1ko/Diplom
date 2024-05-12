@@ -13,17 +13,7 @@ class MainActivity : AppCompatActivity() {
 
        TimerKo();
 
-
     }
-
-
-
-
-
-
-
-
-
     fun TimerKo()
     {
         val timer = object : CountDownTimer(2000,1000)

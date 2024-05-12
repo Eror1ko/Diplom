@@ -6,19 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".RegistationActivity"
     android:orientation="vertical"
-    android:background="@drawable/fon">
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectanglecircle"
+        android:backgroundTint="@color/backgroudcolor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:text="Для продолжения нужно зарегистрироваться! "
+            android:textColor="@color/orange"
+
+            android:textSize="16dp" />
+
+    </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:text="Для продолжения нужно зарегистрироваться! "
-        android:textColor="@color/orange"
-
-        android:textSize="16dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -134,6 +144,6 @@
         android:layout_height="70dp"
         android:text="Зарегистрироваться!"
         android:textSize="18dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/backgroudcolor"
         android:padding="13dp" />
 </LinearLayout>
