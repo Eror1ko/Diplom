@@ -29,14 +29,19 @@ class authorization : AppCompatActivity()
 
 
         btn1.setOnClickListener {
-            ConnectSupaBase().SignIn(mail1.text.toString(), pass1.text.toString())
-            Toast.makeText(this,"Вы авторизовались!",Toast.LENGTH_SHORT).show()
-            val Intenttt = Intent(this, MainOneIsMain::class.java )
-            startActivity(Intenttt)
+
+            if (mail1.text.isNotEmpty() && pass1.text.isNotEmpty())
+            {
+                ConnectSupaBase().SignIn(mail1.text.toString(), pass1.text.toString())
+
+                ConnectSupaBase().SelectUser()
+                Toast.makeText(this,"Вы авторизовались!",Toast.LENGTH_SHORT).show()
+                val Intenttt = Intent(this, MainOneIsMain::class.java )
+                startActivity(Intenttt)
+            }else
+            {
+                Toast.makeText(this,"Для авторизации введите корректные данные от аккаунта!", Toast.LENGTH_SHORT).show()
+            }
         }
-
-
-
-
     }
     }

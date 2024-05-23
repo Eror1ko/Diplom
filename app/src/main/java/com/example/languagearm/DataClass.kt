@@ -16,16 +16,37 @@ class DataClass {
         val id: Int = 0,
         val название: String = "",
         val описание: String = "",
-        val фото: String = "", )
+        val фото: Drawable? )
+
+
+    data class Hs
+        (
+        val id : Int = 0,
+        val фото: Drawable?,
+        val название: String = "",
+        val описание: String = ""
+                )
 
 
     @kotlinx.serialization.Serializable
     data class User(
         val id:String = "",
-        var name:String ="",
-        var birthday:String = "01.01.2000",
-        var gender:Int = 1,
+        var имя :String ="",
         var email: String = ""
+    )
+
+
+    data class Diction(
+        val id: Int = 0,
+        val слово : String = "",
+        val произношение : String = "",
+        val перевод : String = "",
+        val id_situation : Int = 0
+
+    )
+    data class Situations(
+        val id : Int = 0,
+        val название : String = ""
     )
 
 

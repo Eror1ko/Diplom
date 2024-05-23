@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="135dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="слово"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textTxt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="135dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="произношение"
+            android:layout_marginTop="10dp"
+            android:id="@+id/proizTxt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="перевод"
+            android:layout_marginTop="10dp"
+            android:id="@+id/transTxt"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

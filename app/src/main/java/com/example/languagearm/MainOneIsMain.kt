@@ -3,7 +3,9 @@ package com.example.languagearm
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import com.example.languagearm.Fragments.FirstFragment
+import com.example.languagearm.Fragments.FourthFragment
 import com.example.languagearm.Fragments.SecondFragment
 import com.example.languagearm.Fragments.SixthFragment
 
@@ -21,10 +23,10 @@ class MainOneIsMain : AppCompatActivity() {
 
     private fun WorkWithMenuBtn()
     {
-        val fragment1 : Button = findViewById( R.id.btn1)
-        val fragment2 : Button=  findViewById (R.id.btn2)
-        val fragment3 : Button = findViewById (R.id.btn3)
-        val fragment4 : Button = findViewById (R.id.btn3)
+        val fragment1 : ImageButton = findViewById( R.id.btn1)
+        val fragment2 : ImageButton=  findViewById (R.id.btn2)
+        val fragment3 : ImageButton = findViewById (R.id.btn3)
+        val fragment4 : ImageButton = findViewById (R.id.btn4)
 
 
 
@@ -49,7 +51,7 @@ class MainOneIsMain : AppCompatActivity() {
         fragment3.setOnClickListener {
             supportFragmentManager.beginTransaction().replace(
                 R.id.mainFrame,
-               FirstFragment()
+               FourthFragment()
             ).commit();
         }
 

@@ -17,7 +17,7 @@ import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.postgrest
 import kotlinx.coroutines.launch
 import org.json.JSONException
-import java.lang.Exception
+
 
 class RegistationActivity : AppCompatActivity() {
 
@@ -47,22 +47,33 @@ class RegistationActivity : AppCompatActivity() {
 
         //Обработчик на регистрацию пользователя
         btn.setOnClickListener {
-        val  name00 = name.text.toString()
-        val  mail00 = mail.text.toString()
-        val  pass00 = pass.text.toString()
+            if (name.text.isNotEmpty() && mail.text.isNotEmpty() && pass.text.isNotEmpty() )
+            {
+                try {
+                    DataTime.user.имя = name.text.toString()
+                    DataTime.user.email = mail.text.toString()
+                    Toast.makeText(this,"Вы зарегистрировались! Авторизуйтесь в следующем окне.",Toast.LENGTH_SHORT).show()
+                    ConnectSupaBase().SignUp(mail.text.toString(),pass.text.toString())
+                    ConnectSupaBase().InsertName()
+                    val intenttto = Intent(this, authorization::class.java)
+                    startActivity(intenttto)
+                }
+                catch (ex : Exception)
+                {
+                    Toast.makeText(this,"Ошибка", Toast.LENGTH_SHORT).show()
+                }
 
-            ConnectSupaBase().SignUp(mail.text.toString(),pass.text.toString())
+            }
+            else
+            {
+                Toast.makeText(this,"Заполните все поля для регистрации!", Toast.LENGTH_SHORT).show()
+            }
         }
-
         txtbutton.setOnClickListener {
+            DataTime.user.email = mail.text.toString()
 
             val Intenttt1 = Intent(this, authorization::class.java )
             startActivity(Intenttt1)
-
-//            Toast.makeText(this,"Адрес изменен",Toast.LENGTH_SHORT).show()
-        //            val ttt = Intent(this, authorization::class.java)
-//            startActivity(ttt)
         }
-
     }
 }

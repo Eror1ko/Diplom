@@ -31,17 +31,6 @@
                 android:textColor="@color/orange"
                 android:textStyle="italic"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginEnd="10dp"
-                android:backgroundTint="@color/black"
-                android:padding="2dp"
-                android:text="Назад"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                app:cornerRadius="10dp" />
         </LinearLayout>
 
 
@@ -51,18 +40,18 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ваша фотография"
-                android:textColor="@color/orange"
-                android:textStyle="bold"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ваша фотография"-->
+<!--                android:textColor="@color/orange"-->
+<!--                android:textStyle="bold"/>-->
 
-            <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/flag" />
+<!--            <ImageButton-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/flag" />-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -75,7 +64,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:hint="Здесь ваше имя"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:id="@+id/editName"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -84,11 +74,13 @@
                 android:textColor="@color/orange"
                 android:textStyle="bold"/>
 
-            <EditText
+            <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:hint="Здесь ваша почта"
-                android:textColor="@color/black"/>
+                android:hint="ваша почта"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/mailTxt"/>
 
 
         </LinearLayout>

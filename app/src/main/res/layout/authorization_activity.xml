@@ -36,18 +36,19 @@
 
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="49dp"
             android:layout_marginLeft="24dp"
             android:text="Введите Вашу электронную почту:"
             android:textColor="@color/orange"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold" />
 
         <EditText
             android:layout_marginLeft="25dp"
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="35dp"
+            android:maxLines="1"
             android:id="@+id/mailAutoriz"
             android:background="@drawable/customedittext"
             />
@@ -66,14 +67,15 @@
             android:text="Введите Ваш пароль:"
             android:textColor="@color/orange"
             android:layout_marginLeft="24dp"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold" />
 
         <EditText
             android:layout_marginLeft="25dp"
-            android:layout_width="350dp"
+            android:layout_width="250dp"
             android:layout_height="35dp"
             android:id="@+id/PassAutoriz"
+            android:maxLines="1"
             android:background="@drawable/customedittext"
             android:inputType="textPassword"
             />
@@ -81,7 +83,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="365dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
@@ -93,7 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Если у Вас нет аккаунта, то"
-            android:textSize="15dp"
+            android:textSize="13dp"
             android:textColor="@color/orange"/>
 
         <TextView
@@ -102,7 +104,7 @@
             android:layout_height="wrap_content"
             android:onClick="SignUp"
             android:text="зарегистрируйтесь."
-            android:textSize="15dp"
+            android:textSize="13dp"
             android:textColor="@color/orange"
             android:textStyle="bold"/>
 
